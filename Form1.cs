@@ -16,7 +16,7 @@ namespace DataGridClick1
 
                 dataGridView1.CellClick += DataGridView_CellClick;
 
-                string connectionString = "Server=localhost;Database=MyDatabase;User ID=SKGMPC\\skgmy;Password=shax;Trusted_Connection=true;";
+                string connectionString = "Server=localhost;Database=MyDatabase;Trusted_Connection=true;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     string query = "SELECT * FROM datagridclick;";
